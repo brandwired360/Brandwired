@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brand Wired — Digital Marketing</title>
+  <meta name="description" content="Brand Wired — Professional Digital Marketing" />
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0b74de;
+      --muted:#6b7280;
+      --text:#0f172a;
+      --glass: rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,var(--bg),#ffffff);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* layout */
+    .wrap{max-width:1100px;margin:24px auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo-box{width:56px;height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#0b1520}
+    .brand-name{font-weight:700;font-size:18px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
+    h1{font-size:28px;margin:0 0 10px 0}
+    p.lead{margin:0;color:var(--muted)}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;margin-top:14px}
+    .info-list{margin:12px 0 0 0;padding:0;list-style:none}
+    .info-list li{margin-bottom:8px;color:var(--muted)}
+
+    /* services grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+    .service{padding:14px;border-radius:10px;background:linear-gradient(180deg,var(--glass),#fff);box-shadow:0 6px 18px rgba(10,20,40,0.03);min-height:110px}
+
+    /* portfolio */
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+    .portfolio img{width:100%;height:120px;object-fit:cover;border-radius:8px;display:block}
+
+    /* contact form */
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;margin-top:8px;font-size:14px}
+    form button{margin-top:10px;padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding-bottom:20px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .portfolio{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      .grid{grid-template-columns:1fr}
+      .portfolio{grid-template-columns:1fr}
+      header{gap:10px}
+      nav{display:none}
+    }
+
+    /* small nice touches */
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:#0b74de;font-weight:700;font-size:12px}
+    .muted{color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- DARK SVG LOGO -->
+        <div class="logo-box" aria-hidden="true">
+          <!-- simple abstract icon + text inside dark box -->
+          <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brand Wired logo">
+            <rect width="48" height="48" rx="10" fill="#07111A"/>
+            <path d="M14 30 L22 18 L30 30" stroke="#0b74de" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="14" r="2" fill="#ffffff80"/>
+            <circle cx="32" cy="14" r="2" fill="#ffffff80"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Brand Wired</div>
+          <div class="muted" style="font-size:12px">Digital Marketing</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <span class="tag">Digital Marketing • Intern</span>
+        <h1>We help brands grow online — Brand Wired</h1>
+        <p class="lead">At Brand Wired we create result-driven social media strategy, content that converts, and targeted ad campaigns to grow your audience and sales.</p>
+
+        <ul class="info-list">
+          <li><strong>Services:</strong> Social Media, Content Creation, PPC, Strategy</li>
+          <li><strong>Email:</strong> <a href="mailto:brandwired360@gmail.com">brandwired360@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> +92 337 2179658</li>
+        </ul>
+
+        <a class="btn" href="#contact">Get in touch</a>
+
+        <div style="margin-top:18px" aria-hidden="true">
+          <div style="color:var(--muted);font-size:13px">Quick services</div>
+          <div class="grid" style="margin-top:10px">
+            <div class="service">
+              <strong>Social Strategy</strong>
+              <div class="muted" style="margin-top:8px;font-size:13px">Audience research, content pillars, posting plan.</div>
+            </div>
+            <div class="service">
+              <strong>Content</strong>
+              <div class="muted" style="margin-top:8px;font-size:13px">Creative posts, short videos, captions & design.</div>
+            </div>
+            <div class="service">
+              <strong>Ads & PPC</strong>
+              <div class="muted" style="margin-top:8px;font-size:13px">Campaign setup, targeting, and optimization.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card" aria-label="Contact card">
+        <h3 style="margin:0 0 6px 0">Contact</h3>
+        <p class="muted" style="margin:0 0 10px 0">Send a quick message or reach on WhatsApp</p>
+
+        <p style="margin:0;font-weight:700">Brand Wired</p>
+        <p class="muted" style="margin:6px 0 10px 0">Email: <a href="mailto:brandwired360@gmail.com">brandwired360@gmail.com</a></p>
+        <p class="muted" style="margin:0 0 12px 0">WhatsApp: <strong>+92 337 2179658</strong></p>
+
+        <a class="btn" href="#contact" style="display:inline-block">Message us</a>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-top:22px">
+      <h2 style="margin:0 0 8px 0">About Brand Wired</h2>
+      <p class="muted">Brand Wired is a growing digital marketing team. Currently operating with an intern-led approach, we focus on social media strategy, content planning and targeted advertising to deliver measurable growth for young brands and small businesses.</p>
+    </section>
+
+    <section id="services" style="margin-top:18px">
+      <div class="card">
+        <h2 style="margin:0 0 10px 0">What we do</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="min-width:220px;flex:1">
+            <h4 style="margin:0 0 6px 0">Social Media Management</h4>
+            <div class="muted">Content calendar, engagement, community building and analytics reporting.</div>
+          </div>
+          <div style="min-width:220px;flex:1">
+            <h4 style="margin:0 0 6px 0">Content Creation</h4>
+            <div class="muted">Post design, short videos, captions and creatives that match your brand voice.</div>
+          </div>
+          <div style="min-width:220px;flex:1">
+            <h4 style="margin:0 0 6px 0">Ads & Campaigns</h4>
+            <div class="muted">Facebook & Instagram campaigns, targeting, budget optimization and reporting.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 10px 0">Portfolio (Samples)</h2>
+      <div class="portfolio">
+        <img src="https://via.placeholder.com/600x400?text=Campaign+Sample+1" alt="Sample 1">
+        <img src="https://via.placeholder.com/600x400?text=Campaign+Sample+2" alt="Sample 2">
+        <img src="https://via.placeholder.com/600x400?text=Campaign+Sample+3" alt="Sample 3">
+      </div>
+      <div class="muted" style="margin-top:10px">Replace placeholders with your real screenshots when available.</div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin:0 0 10px 0">Contact Us</h2>
+      <p class="muted">Send a quick message — or email/WhatsApp us directly.</p>
+
+      <form action="mailto:brandwired360@gmail.com" method="post" enctype="text/plain" style="margin-top:10px">
+        <label>
+          Your name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label style="margin-top:8px;display:block">
+          Your message
+          <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    <footer>
+      © <strong>Brand Wired</strong> — Digital Marketing · Email: <a href="mailto:brandwired360@gmail.com">brandwired360@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
